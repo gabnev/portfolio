@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: black;
+  overflow: hidden;
+}
+
+.main-container {
+  /* position: relative; */
+}
+
+/* NAVIGATION */
+
+.navbar {
+  width: 300px;
+  height: 100%;
+  background: #262626;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20% 0 0 60%;
+  transition: right .8s;
+}
+
+.change {
+  right: 0px;
+}
+
+.nav-menu {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background: yellow;
+  transition: all .8s;
+}
+
+.change.line-1 {
+  transform: rotateZ(-405deg) translate(-8px, 7px);
+}
+
+.change.line-2 {
+  opacity: 0;
+}
+
+.change.line-3 {  
+  transform: rotateZ(405deg) translate(-8px, -9px);
+}
+
+.nav-list {
+  text-align: right;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 22px;
+  color: #eee;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 3px 0;
+}
+
+.nav-link::before, 
+.nav-link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: yellow;
+  position: absolute;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.nav-link::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+.nav-link::before {
+  top: 0;
+  transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+  transform: scaleX(1);  
+}
+
+/* HOME PAGE */
+
+.title-container {
+  position: fixed;
+  top: 35vh;
+  left: 5vw;
+  z-index: 1;
+}
+
+.title {
+  color: yellow;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.subTitle {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+}
+
+.testLink {
+  text-decoration: red;
+  color: yellow;
+}
+
+/* ABOUT PAGE */
+
+.about {
+  color: yellow;
+  position: fixed;
+  top: 35vh;
+  left: 50vw;
+}
+
+/* PROJECT PAGE */
+
+.projects {
+  color: yellow;
+  position: fixed;
+  top: 35vh;
+  left: 50vw;
+}
+
+/* CONTACT PAGE */
+
+.contacts {
+  color: yellow;
+  position: fixed;
+  top: 35vh;
+  left: 50vw;
+}
