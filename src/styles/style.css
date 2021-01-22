@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -64,7 +63,7 @@ body {
   opacity: 0;
 }
 
-.change.line-3 {  
+.change.line-3 {
   transform: rotateZ(405deg) translate(-8px, -9px);
 }
 
@@ -89,8 +88,7 @@ body {
   padding: 3px 0;
 }
 
-.nav-link::before, 
-.nav-link::after {
+.nav-link::before, .nav-link::after {
   content: "";
   width: 100%;
   height: 2px;
@@ -111,9 +109,8 @@ body {
   transform-origin: left;
 }
 
-.nav-link:hover::before,
-.nav-link:hover::after {
-  transform: scaleX(1);  
+.nav-link:hover::before, .nav-link:hover::after {
+  transform: scaleX(1);
 }
 
 /* HOME PAGE */
@@ -136,11 +133,6 @@ body {
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
-}
-
-.testLink {
-  text-decoration: red;
-  color: yellow;
 }
 
 /* ABOUT PAGE */
@@ -174,6 +166,52 @@ body {
 
 @media (max-width: 500px) {
   body {
-    width: 500px;
+    width: 300px;
+  }
+
+  /* NAVIGATION */
+
+  .nav-menu {
+    top: 50px;
+    right: 25px;
+  }
+
+  .navbar {
+    width: 125px;
+    border-radius: 0 0 0 0;
+  }
+
+  .nav-link {
+    font-size: 15px;
+  }
+
+  /* HOME PAGE */
+
+  .title-container {
+    top: 5vh;
+    left: 5vw;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .subTitle {
+    font-size: 15px;
+  }
+
+  /* ABOUT PAGE */
+  .about {
+    top: 35vh;
+    left: 25vw;
+  }
+  /* PROJECT PAGE */
+  .projects {
+    top: 35vh;
+    left: 25vw;
+  }
+  /* CONTACT PAGE */
+  .contacts {
+    top: 35vh;
+    left: 25vw;
   }
 }
