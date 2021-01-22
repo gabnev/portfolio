@@ -169,3 +169,11 @@ body {
   top: 35vh;
   left: 50vw;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 500px) {
+  body {
+    width: 500px;
+  }
+}
