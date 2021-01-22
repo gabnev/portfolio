@@ -139,6 +139,7 @@ body {
 
 .about {
   color: yellow;
+  font-family: 'Orbitron', sans-serif;
   position: fixed;
   top: 35vh;
   left: 50vw;
@@ -148,6 +149,7 @@ body {
 
 .projects {
   color: yellow;
+  font-family: 'Orbitron', sans-serif;
   position: fixed;
   top: 35vh;
   left: 50vw;
@@ -157,6 +159,7 @@ body {
 
 .contacts {
   color: yellow;
+  font-family: 'Orbitron', sans-serif;
   position: fixed;
   top: 35vh;
   left: 50vw;
@@ -166,7 +169,7 @@ body {
 
 @media (max-width: 500px) {
   body {
-    width: 300px;
+    width: 400px;
   }
 
   /* NAVIGATION */
